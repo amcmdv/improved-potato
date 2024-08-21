@@ -19,7 +19,7 @@ function detectMutations(reference, sample, temperature) {
         const sampleChar = sample[i];
 
         if (refChar !== sampleChar) {
-            const thermodynamicImpact = thermodynamics.analyzeMutation(refChar, sampleChar, temperature);
+            const thermodynamicImpact = thermodynamics.analyseMutation(refChar, sampleChar, temperature);
             mutations.push({
                 position: i + 1,
                 original: refChar,
