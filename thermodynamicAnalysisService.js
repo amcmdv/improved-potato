@@ -5,7 +5,7 @@
  * @param {number} temperature - The temperature in Celsius.
  * @returns {Object} - Thermodynamic impact analysis.
  */
-function analyzeMutation(original, mutated, temperature) {
+function analyseMutation(original, mutated, temperature) {
     // Example pseudo-code for calculating the impact on ion channel stability
     const deltaG = calculateDeltaG(original, mutated, temperature);
     const stabilityImpact = determineStabilityImpact(deltaG);
